@@ -1,0 +1,10 @@
+Android 
+Gradle : 3.3.2
+Gradle v : 4.10.1
+
+
+1. Open andriod folder in android studio
+2. Click build in bottom address bar
+3. Open File->Project structure...
+4. If change anything in andriod folder click Build -> Make Project
+5. To build apk Build-> Build Bundle(s)/APK(s)-> Build APK(s) 
