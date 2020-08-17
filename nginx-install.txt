@@ -1,0 +1,77 @@
+sudo apt-get install nginx
+
+Goto ->  /etc/nginx/sites-available
+
+server {
+    listen 80;
+    listen [::]:80;
+    
+    server_name centrastate.com www.centrastate.com;
+    root/var/www/html/centrastate.com/;
+
+    index index.html index.php;
+
+    access_log /var/log/nginx/centrastate.com.access.log;
+    error_log /var/log/nginx/centrastate.com.error.log;
+
+    
+    location = /favicon.ico {
+                log_not_found off;
+                access_log off;
+    }
+
+    location = /robots.txt {
+                allow all;
+                log_not_found off;
+                access_log off;
+    }
+
+    location / {
+                try_files $uri $uri/ /index.php?$args;
+    }
+
+    location ~ \.php$ {
+        try_files $uri =404;
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+
+    }
+
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
+                expires max;
+                log_not_found off;
+    }
+}
+
+sudo ln -s /etc/nginx/sites-available/csm /etc/nginx/sites-enabled/  
+sudo systemctl restart nginx
+sudo service nginx restart && sudo service php7.4-fpm restart
+
+To run php in nginx
+Install  php7.4-fpm 
+Update 
+
+ fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+
+in defaul site available 
+
+
+Phpmyadmin 
+
+sudo apt-get install phpmyadmin
+sudo ln -s /usr/share/phpmyadmin /var/www/html
+
+Create new user in mysql
+CREATE USER 'csm'@'localhost' IDENTIFIED BY 'goodday123';
+GRANT ALL PRIVILEGES ON * . * TO 'csm'@'localhost';
+
+
+
+Install wordpress 
+
+# wget https://wordpress.org/latest.tar.gz
+# tar -zxvf latest.tar.gz
+# mv wordpress/* .
+# rm -rf wordpress
