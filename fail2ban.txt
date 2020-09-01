@@ -1,0 +1,24 @@
+Check all
+tail -f /var/log/fail2ban.log
+
+fail2ban-regex /var/log/nginx/example.com.error.log  /etc/fail2ban/filter.d/nginx-req-limit.conf
+
+sudo fail2ban-client status
+
+sudo fail2ban-client status wordpress
+
+sudo service fail2ban restart
+
+ fail2ban-regex /var/log/nginx/access.log  /etc/fail2ban/filter.d/wp-login.conf
+
+
+sudo nano /etc/fail2ban/filter.d/
+
+sudo nano /etc/fail2ban/jail.local
+
+sudo fail2ban-client set wordpress unbanip 60.243.100.113
+
+
+https://www.e-tinkers.com/2017/01/secure-nginx-and-wordpress-with-fail2ban/
+https://www.digitalocean.com/community/tutorials/how-to-protect-an-nginx-server-with-fail2ban-on-ubuntu-14-04
+https://rtcamp.com/tutorials/nginx/fail2ban/
