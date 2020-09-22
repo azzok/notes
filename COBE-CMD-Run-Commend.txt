@@ -1,0 +1,11 @@
+COBE - CMD
+To run WorkFlow in CMD
+--------------------------------------------------
+cd /var/www/MYCOBE_WORKFLOW/NodeJs && npm run cmd
+cd /var/www/MYCOBE_WORKFLOW/FileServer && npm run cmd
+cd /var/www/MYCOBE_WORKFLOW/WFServices/pushBackgroundActivity && npm run cmd
+cd /var/www/MYCOBE_WORKFLOW/WFServices/cron && npm run cmd
+-------------------------------------------------
+cd /var/www/grobid-0.6.0 && ./gradlew run
+cd /var/www/MYCOBE_PYTHON &&  sudo python3 init.py 
+cd /var/www/MYCOBE_BACKEND && PORT=3600 node app.js
