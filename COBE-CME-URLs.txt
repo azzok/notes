@@ -1,0 +1,38 @@
+[8/24 1:52 PM] AshokKumar P
+    
+
+http://cmdwf.mycobe.xyz/
+http://cmdfileserver.mycobe.xyz/
+http://cmdwf.mycobe.xyz/editor/
+http://cmdwf.mycobe.xyz/phpmyadmin/
+http://cmdwfapi.mycobe.xyz/
+http://cmdpreediting.mycobe.xyz/
+
+
+CMD 
+WorkFlow 		: http://cmd.mycobe.com/
+Workflow Node 	: http://nodeservice.cmd.mycobe.com 	- port: 3200
+File server 	: http://fileserver.cmd.mycobe.com 		- port: 3400
+Backend Node 	: http://preediting.cmd.mycobe.com		- port: 3400
+Editor 			: http://cmd.mycobe.com/editor/
+---------------------------------------------------------------------
+Doc2HTML 
+Folder Path 	: E:\jenkins\workspace\Doc2Html\runDOC2HTML
+Commend 		: npm run prod
+
+
+
+
+CMD - Development
+WorkFlow 		: http://dev.mycobe.com/
+Workflow Node 	: http://nodeservice.dev.mycobe.com 	- port: 5200
+File server 	: http://fileserver.dev.mycobe.com 		- port: 5400
+Backend Node 	: http://preediting.dev.mycobe.com		- port: -
+Editor 			: http://dev.mycobe.com/editor/
+---------------------------------------------------------------------
+Doc2HTML 
+Folder Path 	: E:\jenkins\workspace\Doc2Html\runDOC2HTML
+Commend 		: npm run dev
+
+
+Jenkins - http://build.mycobe.com/

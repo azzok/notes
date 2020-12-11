@@ -1,0 +1,19 @@
+127.0.0.1       build.mycobe.com
+127.0.0.1       cmd.mycobe.com
+127.0.0.1       fileserver.cmd.mycobe.com
+127.0.0.1       nodeservice.cmd.mycobe.com
+127.0.0.1       editor.cmd.mycobe.com
+127.0.0.1	editornodeappservice.cmd.mycobe.com
+
+127.0.0.1       dev.mycobe.com
+127.0.0.1       fileserver.dev.mycobe.com
+127.0.0.1       nodeservice.dev.mycobe.com
+127.0.0.1       editor.dev.mycobe.com
+127.0.0.1	editornodeappservice.dev.mycobe.com
+
+127.0.0.1       preediting.cmd.mycobe.com
+127.0.0.1       preediting.dev.mycobe.com
+127.0.0.1       pythonapp.mycobe.com
+127.0.0.1       grobidapp.mycobe.com
+
+192.168.1.3
