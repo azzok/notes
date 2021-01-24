@@ -1,0 +1,12 @@
+composer install
+php artisan serve
+
+
+-
+
+if any error occur
+
+composer install --no-scripts
+php artisan config:cache 
+php artisan config:clear 
+composer dump-autoload -o

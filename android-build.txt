@@ -8,3 +8,14 @@ Gradle v : 4.10.1
 3. Open File->Project structure...
 4. If change anything in andriod folder click Build -> Make Project
 5. To build apk Build-> Build Bundle(s)/APK(s)-> Build APK(s) 
+
+if fb_app_id error occure
+In android studio  ---- go to -> app>res>values>strings.xml
+add following lines
+
+    <string name="fb_app_id">972139946571038</string>
+    <string name="fb_app_name">Salud-staging</string>
+
+
+6. Apk file path -> android->app->build->outputs->apk->debug
+
