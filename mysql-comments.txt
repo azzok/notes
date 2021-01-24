@@ -1,0 +1,12 @@
+grant all on *.* to 'cobe'@'%' identified by 'goodday123' with grant option; 
+
+srram070@gmail.com
+123456
+
+mysql -u root -p mycobe_dev_workflow < /home/cobe/Documents/mycobewf_cmd.sql
+
+GRANT DROP ON tutorial_database.* TO 'testuser'@'localhost';
+
+GRANT permission ON mycobe_dev_workflow.* TO 'root'@'localhost';
+
+GRANT ALL PRIVILEGES ON mycobe_dev_workflow. * TO 'root'@'localhost';

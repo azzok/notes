@@ -1,0 +1,24 @@
+Production urls
+
+Workflow : http://cmd.mycobe.com/
+
+
+
+
+C:\D2H\runDOC2HTML>
+E:/jenkins/workspace/Doc2Html/Doc2HTML_APP/PreCopyEditingPreprocess/bin/Debug/PreCopyEditingPreprocess.exe   C:/D2HFiles/Temp/ TEST_JK_0003 TEST_JK_0003.docx  PROCESS_MATH=[True] RETAIN_FONT=[False] PROCESS_NAME=[Doc2HTML] PROCESS_SPELL=[True] FILE_RERUN=[False]
+
+
+E:/jenkins/workspace/Doc2Html/Doc2HTML_APP/PreCopyEditingPreprocess/bin/Debug/PreCopyEditingPreprocess.exe C:\D2HFiles\Temp\ JTD_Data_files_0013 JTD_Data_files_0013.docx PROCESS_SPELL=[True]
+
+Usage : PreCopyEditingPreprocess.exe <inputFilenamewithFullPath>
+
+C:\D2H\runDOC2HTML>
+
+
+C:/D2H/bin/PreCopyEditingPreprocess.exe   C:\D2HFiles\Temp\ JTD_Data_files_0013 JTD_Data_files_0013.docx PROCESS_SPELL=[True]
+
+
+05-10 05.20.08.514 baseDirectory=[C:\D2HFiles\Temp\] workObjectID=[JTD_Data_files_0013] PROCESS_MATH=[True] RETAIN_FONT=[False] PROCESS_NAME=[Doc2HTML] PROCESS_SPELL=[True] FILE_RERUN=[False]
+05-10 05.20.08.515 Input File Name : C:\D2HFiles\Temp\Source/JTD_Data_files_0013.docx
+05-10 05.20.08.516 D2H_ERR_INFILE_NOTEXISTS -  Input file doesn't exists. FileName: C:\D2HFiles\Temp\Source/JTD_Data_files_0013.docx
